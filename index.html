@@ -2,8 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Reddit</title>
+
+    <style>
+
+        #logo {
+            height: 40px;
+            display: inline;
+        }
+
+        #categories {
+            display: inline;
+        }
+
+        #categories li {
+            padding: 2px 6px 0 6px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #eff7ff;
+            color: #369;
+            display: inline;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #header {
+            border: 0;
+            background-color: #9fccf7;
+        }
+
+        #categories li.selected {
+            color: orangered;
+            background-color: white;
+            border: 1px solid #5f99cf;
+            border-bottom: 1px solid white;
+        }
+
+        #rightColumn {
+            margin: 0.5%;
+            float: left;
+            width: 34%;
+        }
+
+        #leftColumn {
+            float: left;
+            height: 200px;
+            width: 65%;
+        }
+
+        #loginDiv {
+            margin-top: 10px;
+            height: 65px;
+            position: relative;
+            border: 1px solid gray;
+        }
+
+        #usernameInput {
+            margin-top: 5px;
+            position: absolute;
+            width: 45%;
+            left: 5px;
+        }
+
+        #passwordInput {
+            margin-top: 5px;
+            position: absolute;
+            width: 45%;
+            right: 5px;
+        }
+
+        #rememberCheckbox {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        #rememberLabel {
+            font-size: 13px;
+            margin: 3px;
+            display: inline-block;
+        }
+
+        #loginFormBottomDiv {
+            position: absolute;
+            bottom: 2px;
+        }
+
+        #resetPassword {
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        #submitButton {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+        }
+        #searchInput{
+            width: calc(100% - 4px);
+        }
+
+    </style>
+
 </head>
+<div id="header">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png"
+         id="logo">
+    <ul id="categories">
+        <li class="selected">hot</li>
+        <li>new</li>
+        <li>rising</li>
+        <li>controversial</li>
+        <li>top</li>
+        <li>gilded</li>
+        <li>wiki</li>
+    </ul>
+</div>
+
+<div id="leftColumn">
+
+</div>
+<div id="rightColumn">
+    <div id="searchDiv">
+        <input id="searchInput" type="text" placeholder="Search..">
+    </div>
+    <div id="loginDiv">
+        <form id="loginForm">
+            <input id="usernameInput" type="text" placeholder="username" maxlength="20">
+            <input id="passwordInput" type="password" placeholder="password" maxlength="20">
+            <div id="loginFormBottomDiv">
+                <input id="rememberCheckbox" type="checkbox">
+                <label id="rememberLabel" for="rememberCheckbox">remember me</label>
+                <a id="resetPassword" href=".">reset password</a>
+            </div>
+            <input id="submitButton" type="submit" value="login">
+        </form>
+    </div>
+
+
+</div>
+
+
 <body>
 
 </body>
