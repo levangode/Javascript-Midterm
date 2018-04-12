@@ -39,6 +39,9 @@
             border: 1px solid #5f99cf;
             border-bottom: 1px solid white;
         }
+        a{
+            text-decoration: none;
+        }
 
         #rightColumn {
             margin: 0.5%;
@@ -90,7 +93,6 @@
         }
 
         #resetPassword {
-            text-decoration: none;
             font-size: 13px;
         }
 
@@ -99,9 +101,31 @@
             bottom: 4px;
             right: 4px;
         }
-        #searchInput{
+
+        #searchInput {
             width: calc(100% - 4px);
         }
+
+        #ads {
+            margin: 4px;
+        }
+
+        .submitNew{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+
+            margin: 5px;
+            border: 1px solid #c4dbf1;
+            background: #ffffff url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png) repeat scroll 0 -278px;
+        }
+
+        .submitNew:hover{
+            border-color: #879eb4;
+            background: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png) repeat 0 -243px;
+        }
+
 
     </style>
 
@@ -138,6 +162,19 @@
             </div>
             <input id="submitButton" type="submit" value="login">
         </form>
+    </div>
+
+    <div id="ads">
+        <img src="http://phuthaimedia.com/uploads/files/can-stock-photo_csp15042680(1)(1).jpg" style="width: 100%">
+    </div>
+
+    <div>
+        <div class="submitNew" id="newLink">
+            <a href=".">Submit a new link</a>
+        </div>
+        <div class="submitNew" id="newPost">
+            <a href=".">Submit a new text post</a>
+        </div>
     </div>
 
 
