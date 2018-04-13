@@ -5,7 +5,6 @@
     <title>Reddit</title>
 
     <style>
-
         #logo {
             height: 40px;
             display: inline;
@@ -39,20 +38,20 @@
             border: 1px solid #5f99cf;
             border-bottom: 1px solid white;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
 
         #rightColumn {
             margin: 0.5%;
-            float: left;
-            width: 34%;
+            float: right;
+            width: 280px;
         }
 
         #leftColumn {
-            float: left;
+            display: inline-block;
             height: 200px;
-            width: 65%;
         }
 
         #loginDiv {
@@ -110,25 +109,85 @@
             margin: 4px;
         }
 
-        .submitNew{
+        .submitNew {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
             letter-spacing: -1px;
-
             margin: 5px;
             border: 1px solid #c4dbf1;
             background: #ffffff url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png) repeat scroll 0 -278px;
         }
 
-        .submitNew:hover{
+        .submitNew:hover {
             border-color: #879eb4;
             background: url(https://www.redditstatic.com/sprite-reddit.bTLvdEETokI.png) repeat 0 -243px;
         }
 
+        .postItem {
+            height: 100px;
+            display: table;
+        }
 
+        .rank {
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .votes {
+            vertical-align: middle;
+            display: table-cell;
+            padding: 6px;
+        }
+
+        .arrow {
+            margin: auto;
+            display: block;
+            height: 20px;
+        }
+
+        .postIcon {
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .thumbnail {
+            height: 50px;
+        }
+
+        .postInfo li {
+            display: inline;
+        }
+
+        .postInfo li a {
+            font-size: 13px;
+            color: #888;
+            font-weight: bold;
+            padding: 0 1px;
+        }
+
+        .postInfo {
+            position: relative;
+        }
+
+        .postInfo ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .postDate {
+            margin: 0;
+            color: #888;
+            font-size: small;
+        }
+
+        .expand {
+            display: inline-block;
+            height: 23px;
+            width: 23px;
+            background: url(https://www.redditstatic.com/sprite-expando.69EqpDZz3HM.png) no-repeat 0 -491px;
+        }
     </style>
-
 </head>
 <div id="header">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png"
@@ -145,6 +204,49 @@
 </div>
 
 <div id="leftColumn">
+    <div id="welcome" style="background: green">
+
+        <a href=".">
+            <h2>Welcome to Reddit,</h2>
+            <p>Where a community about your favourite things is waiting for you.</p>
+        </a>
+    </div>
+
+    <div id="posts">
+        <div class="postItem">
+            <span class="rank">1</span>
+            <div class="votes">
+                <div>
+                    <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                </div>
+                <div>40.2k</div>
+                <div>
+                    <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
+                </div>
+            </div>
+            <div class="postIcon">
+                <img class="thumbnail"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
+            </div>
+            <div class="postTitle">
+                asdlkljasflk alsfj alskf aslkf jaslfk jals
+            </div>
+            <div class="postInfo">
+                <div class="expand">
+                </div>
+                <div style="display: inline-block;">
+                    <p class="postDate">submitted 5 hours ago by levan</p>
+                    <ul>
+                        <li><a href=".">comments</a></li>
+                        <li><a href=".">share</a></li>
+                        <li><a href=".">save</a></li>
+                        <li><a href=".">hide</a></li>
+                        <li><a href=".">report</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <div id="rightColumn">
