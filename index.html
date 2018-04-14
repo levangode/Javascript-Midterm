@@ -44,14 +44,13 @@
         }
 
         #rightColumn {
-            margin: 0.5%;
             float: right;
-            width: 280px;
+            margin: 0.5%;
+            width: 300px;
         }
 
         #leftColumn {
-            display: inline-block;
-            height: 200px;
+            float: left;
         }
 
         #loginDiv {
@@ -197,9 +196,46 @@
             color: #0000ff;
         }
 
-        .post{
+        .post {
             display: table-cell;
             vertical-align: middle;
+        }
+
+        .btn {
+            margin-right: 12px;
+            border-bottom: 2px solid #4270a2;
+            color: #ffffff;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            background: #4f86b5 none;
+            white-space: nowrap;
+            padding: 4px 12px 3px;
+            font-size: 12px;
+            line-height: 20px;
+            border-radius: 3px;
+        }
+
+        #banner {
+            background: yellow;
+        }
+
+        #banner a {
+            width: 55%;
+            display: block;
+            margin: 5px;
+            color: black;
+        }
+
+        #banner h2 {
+            margin: 0;
+        }
+
+        #banner p {
+            margin: 0;
+            text-transform: none;
         }
     </style>
 </head>
@@ -217,87 +253,96 @@
     </ul>
 </div>
 
-<div id="leftColumn">
-    <div id="welcome" style="background: green">
+<div>
 
-        <a href=".">
-            <h2>Welcome to Reddit,</h2>
-            <p>Where a community about your favourite things is waiting for you.</p>
-        </a>
-    </div>
+    <div id="leftColumn">
+        <div id="banner">
+            <a href=".">
+                <h2>Welcome to Reddit,</h2>
+                <p>Where a community about your favourite things
+                    is waiting for you.</p>
+                <div>
+                    <span class="btn">
+                        Become a Redditor
+                    </span>
+                    <p>and subscribe to one of thousands of communities.</p>
+                </div>
+            </a>
+        </div>
 
-    <div id="posts">
-        <div class="postItem">
-            <span class="rank">1</span>
-            <div class="votes">
-                <div>
-                    <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
-                </div>
-                <div>40.2k</div>
-                <div>
-                    <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
-                </div>
-            </div>
-            <div class="postIcon">
-                <img class="thumbnail"
-                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
-            </div>
-            <div class="post">
-                <div class="postTitle">
-                    asdlkljasflk alsfj alskf aslkf jaslfk jals
-                </div>
-                <div class="postInfo">
-                    <div class="expand">
+        <div id="posts">
+            <div class="postItem">
+                <span class="rank">1</span>
+                <div class="votes">
+                    <div>
+                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
                     </div>
-                    <div style="display: inline-block;">
-                        <p class="postDate">submitted 5 hours ago by levan</p>
-                        <ul>
-                            <li><a href=".">comments</a></li>
-                            <li><a href=".">share</a></li>
-                            <li><a href=".">save</a></li>
-                            <li><a href=".">hide</a></li>
-                            <li><a href=".">report</a></li>
-                        </ul>
+                    <div>40.2k</div>
+                    <div>
+                        <img class="arrow"
+                             src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
                     </div>
                 </div>
+                <div class="postIcon">
+                    <img class="thumbnail"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
+                </div>
+                <div class="post">
+                    <div class="postTitle">
+                        asdlkljasflk alsfj alskf aslkf jaslfk jals asf as fas gga s asgga sasf as fasf as f asf asf asf
+                        fas
+                    </div>
+                    <div class="postInfo">
+                        <div class="expand">
+                        </div>
+                        <div style="display: inline-block;">
+                            <p class="postDate">submitted 5 hours ago by levan</p>
+                            <ul>
+                                <li><a href=".">comments</a></li>
+                                <li><a href=".">share</a></li>
+                                <li><a href=".">save</a></li>
+                                <li><a href=".">hide</a></li>
+                                <li><a href=".">report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </div>
 
-
     </div>
+    <!--<div id="rightColumn">-->
+    <!--<div id="searchDiv">-->
+    <!--<input id="searchInput" type="text" placeholder="Search..">-->
+    <!--</div>-->
+    <!--<div id="loginDiv">-->
+    <!--<form id="loginForm">-->
+    <!--<input id="usernameInput" type="text" placeholder="username" maxlength="20">-->
+    <!--<input id="passwordInput" type="password" placeholder="password" maxlength="20">-->
+    <!--<div id="loginFormBottomDiv">-->
+    <!--<input id="rememberCheckbox" type="checkbox">-->
+    <!--<label id="rememberLabel" for="rememberCheckbox">remember me</label>-->
+    <!--<a id="resetPassword" href=".">reset password</a>-->
+    <!--</div>-->
+    <!--<input id="submitButton" type="submit" value="login">-->
+    <!--</form>-->
+    <!--</div>-->
 
-</div>
-<div id="rightColumn">
-    <div id="searchDiv">
-        <input id="searchInput" type="text" placeholder="Search..">
-    </div>
-    <div id="loginDiv">
-        <form id="loginForm">
-            <input id="usernameInput" type="text" placeholder="username" maxlength="20">
-            <input id="passwordInput" type="password" placeholder="password" maxlength="20">
-            <div id="loginFormBottomDiv">
-                <input id="rememberCheckbox" type="checkbox">
-                <label id="rememberLabel" for="rememberCheckbox">remember me</label>
-                <a id="resetPassword" href=".">reset password</a>
-            </div>
-            <input id="submitButton" type="submit" value="login">
-        </form>
-    </div>
+    <!--<div id="ads">-->
+    <!--<img src="http://phuthaimedia.com/uploads/files/can-stock-photo_csp15042680(1)(1).jpg" style="width: 100%">-->
+    <!--</div>-->
 
-    <div id="ads">
-        <img src="http://phuthaimedia.com/uploads/files/can-stock-photo_csp15042680(1)(1).jpg" style="width: 100%">
-    </div>
-
-    <div>
-        <div class="submitNew" id="newLink">
-            <a href=".">Submit a new link</a>
-        </div>
-        <div class="submitNew" id="newPost">
-            <a href=".">Submit a new text post</a>
-        </div>
-    </div>
-
-
+    <!--<div>-->
+    <!--<div class="submitNew" id="newLink">-->
+    <!--<a href=".">Submit a new link</a>-->
+    <!--</div>-->
+    <!--<div class="submitNew" id="newPost">-->
+    <!--<a href=".">Submit a new text post</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </div>
 
 
