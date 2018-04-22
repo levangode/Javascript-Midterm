@@ -12,10 +12,11 @@
 
         #categories {
             display: inline;
+            margin: 0;
         }
 
         #categories li {
-            padding: 2px 6px 0 6px;
+            padding: 2px 6px 1px 6px;
             font-weight: bold;
             cursor: pointer;
             background-color: #eff7ff;
@@ -28,7 +29,8 @@
         }
 
         #header {
-            border: 0;
+
+            border-bottom: 1px solid #5f99cf;
             background-color: #9fccf7;
         }
 
@@ -37,6 +39,7 @@
             background-color: white;
             border: 1px solid #5f99cf;
             border-bottom: 1px solid white;
+
         }
 
         a {
@@ -197,6 +200,7 @@
         }
 
         .post {
+            padding-left: 5px;
             display: table-cell;
             vertical-align: middle;
         }
@@ -219,14 +223,16 @@
         }
 
         #banner {
+            margin: 10px;
             background: yellow;
         }
 
         #banner a {
             width: 55%;
             display: block;
-            margin: 5px;
+            margin-left: 10px;
             color: black;
+
         }
 
         #banner h2 {
@@ -237,9 +243,76 @@
             margin: 0;
             text-transform: none;
         }
+
+        .topCategories {
+            padding-left: 0;
+            margin: 0;
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-size: 11px;
+            height: 18px;
+            line-height: 20px;
+            display: inline-block;
+        }
+
+        .topCategories .selected a {
+
+            color: orangered;
+            font-weight: bold;
+        }
+
+        .topCategories li {
+            display: inline-block;
+        }
+
+        .topCategories span {
+            margin: 0 1px 0 1px;
+            cursor: default;
+            text-align: center;
+        }
+
+        .headerTop {
+            padding-bottom: 2px;
+            border-bottom: 1px solid gray;
+            background: #f0f0f0;
+        }
+
+        .dropDown {
+            margin-right: 15px;
+            margin-left: 5px;
+            text-transform: uppercase;
+            font-size: 11px;
+            display: inline-block;
+        }
     </style>
 </head>
 <div id="header">
+    <div class="headerTop">
+        <div class="dropDown">
+            <span>My Subreddits</span>
+        </div>
+        <ul class="topCategories">
+            <li class="selected"><a href=".">Popular</a></li>
+            <li><span>-</span><a href=".">All</a></li>
+            <li><span>-</span><a href=".">Random</a></li>
+            <li><span>-</span><a href=".">Users</a></li>
+        </ul>
+        <span style="padding-bottom: 2px">|</span>
+        <ul class="topCategories">
+            <li><a href=".">AskReddit</a></li>
+            <li><span>-</span><a href=".">WordlNews</a></li>
+            <li><span>-</span><a href=".">Videos</a></li>
+            <li><span>-</span><a href=".">Funny</a></li>
+            <li><span>-</span><a href=".">TodayLearned</a></li>
+            <li><span>-</span><a href=".">Pics</a></li>
+            <li><span>-</span><a href=".">Movies</a></li>
+            <li><span>-</span><a href=".">Gifs</a></li>
+            <li><span>-</span><a href=".">MildyInteresting</a></li>
+            <li><span>-</span><a href=".">Aww</a></li>
+            <li><span>-</span><a href=".">ShowerThoghts</a></li>
+        </ul>
+
+    </div>
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png"
          id="logo">
     <ul id="categories">
@@ -254,7 +327,6 @@
 </div>
 
 <div>
-
     <div id="leftColumn">
         <div id="banner">
             <a href=".">
@@ -313,36 +385,36 @@
         </div>
 
     </div>
-    <!--<div id="rightColumn">-->
-    <!--<div id="searchDiv">-->
-    <!--<input id="searchInput" type="text" placeholder="Search..">-->
-    <!--</div>-->
-    <!--<div id="loginDiv">-->
-    <!--<form id="loginForm">-->
-    <!--<input id="usernameInput" type="text" placeholder="username" maxlength="20">-->
-    <!--<input id="passwordInput" type="password" placeholder="password" maxlength="20">-->
-    <!--<div id="loginFormBottomDiv">-->
-    <!--<input id="rememberCheckbox" type="checkbox">-->
-    <!--<label id="rememberLabel" for="rememberCheckbox">remember me</label>-->
-    <!--<a id="resetPassword" href=".">reset password</a>-->
-    <!--</div>-->
-    <!--<input id="submitButton" type="submit" value="login">-->
-    <!--</form>-->
-    <!--</div>-->
+    <div id="rightColumn">
+    <div id="searchDiv">
+    <input id="searchInput" type="text" placeholder="Search..">
+    </div>
+    <div id="loginDiv">
+    <form id="loginForm">
+    <input id="usernameInput" type="text" placeholder="username" maxlength="20">
+    <input id="passwordInput" type="password" placeholder="password" maxlength="20">
+    <div id="loginFormBottomDiv">
+    <input id="rememberCheckbox" type="checkbox">
+    <label id="rememberLabel" for="rememberCheckbox">remember me</label>
+    <a id="resetPassword" href=".">reset password</a>
+    </div>
+    <input id="submitButton" type="submit" value="login">
+    </form>
+    </div>
 
-    <!--<div id="ads">-->
-    <!--<img src="http://phuthaimedia.com/uploads/files/can-stock-photo_csp15042680(1)(1).jpg" style="width: 100%">-->
-    <!--</div>-->
+    <div id="ads">
+    <img src="http://phuthaimedia.com/uploads/files/can-stock-photo_csp15042680(1)(1).jpg" style="width: 100%">
+    </div>
 
-    <!--<div>-->
-    <!--<div class="submitNew" id="newLink">-->
-    <!--<a href=".">Submit a new link</a>-->
-    <!--</div>-->
-    <!--<div class="submitNew" id="newPost">-->
-    <!--<a href=".">Submit a new text post</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
+    <div>
+    <div class="submitNew" id="newLink">
+    <a href=".">Submit a new link</a>
+    </div>
+    <div class="submitNew" id="newPost">
+    <a href=".">Submit a new text post</a>
+    </div>
+    </div>
+    </div>
 </div>
 
 
