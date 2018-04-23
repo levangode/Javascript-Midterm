@@ -44,6 +44,7 @@
         }
 
         #header {
+            position: relative;
             white-space: nowrap;
             border-bottom: 1px solid #5f99cf;
             background-color: #cee3f8;
@@ -67,6 +68,10 @@
             height: 65px;
             position: relative;
             border: 1px solid gray;
+        }
+        
+        #submitButton{
+            cursor: pointer;
         }
 
         #usernameInput {
@@ -117,6 +122,11 @@
             margin: 4px 0 4px 0;
         }
 
+
+        .submitNew a{
+            color: #369;
+            font-size: 18px;
+        }
         .submitNew {
             text-align: center;
             font-size: 24px;
@@ -233,8 +243,9 @@
             overflow: hidden;
             height: 124px;
             margin: 10px;
-            background: url(https://www.redditstatic.com/listingsignupbar-orbit-1.png) -970px center no-repeat;
+            background: url(https://www.redditstatic.com/listingsignupbar-orbit-1.png) center right no-repeat #fefbda!important;
         }
+
 
         #banner a {
             width: 55%;
@@ -369,9 +380,33 @@
             font-size: 13px;
             margin: auto;
         }
+        .arrow{
+            cursor: pointer;
+        }
 
         .supportBtn:hover{
             background: #fdf4c5;
+        }
+
+        .headerBottom{
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #EFF7FF;
+            padding: 4px;
+            line-height: 12px;
+            border-top-left-radius: 7px;
+        }
+
+        .suggestions{
+            line-height: 12px;
+            color: gray;
+        }
+
+        .separator{
+            color: gray;
+            font-weight: bold;
         }
     </style>
 
@@ -389,23 +424,23 @@
         </div>
         <ul class="topCategories">
             <li class="selected"><a href=".">Popular</a></li>
-            <li><span>-</span><a href=".">All</a></li>
-            <li><span>-</span><a href=".">Random</a></li>
-            <li><span>-</span><a href=".">Users</a></li>
+            <li><span class="separator">-</span><a href=".">All</a></li>
+            <li><span class="separator">-</span><a href=".">Random</a></li>
+            <li><span class="separator">-</span><a href=".">Users</a></li>
         </ul>
-        <span style="padding-bottom: 2px">|</span>
+        <span class="separator" style="padding-bottom: 2px">|</span>
         <ul class="topCategories">
             <li><a href=".">AskReddit</a></li>
-            <li><span>-</span><a href=".">WordlNews</a></li>
-            <li><span>-</span><a href=".">Videos</a></li>
-            <li><span>-</span><a href=".">Funny</a></li>
-            <li><span>-</span><a href=".">TodayLearned</a></li>
-            <li><span>-</span><a href=".">Pics</a></li>
-            <li><span>-</span><a href=".">Movies</a></li>
-            <li><span>-</span><a href=".">Gifs</a></li>
-            <li><span>-</span><a href=".">MildyInteresting</a></li>
-            <li><span>-</span><a href=".">Aww</a></li>
-            <li><span>-</span><a href=".">ShowerThoghts</a></li>
+            <li><span class="separator">-</span><a href=".">WordlNews</a></li>
+            <li><span class="separator">-</span><a href=".">Videos</a></li>
+            <li><span class="separator">-</span><a href=".">Funny</a></li>
+            <li><span class="separator">-</span><a href=".">TodayLearned</a></li>
+            <li><span class="separator">-</span><a href=".">Pics</a></li>
+            <li><span class="separator">-</span><a href=".">Movies</a></li>
+            <li><span class="separator">-</span><a href=".">Gifs</a></li>
+            <li><span class="separator">-</span><a href=".">MildyInteresting</a></li>
+            <li><span class="separator">-</span><a href=".">Aww</a></li>
+            <li><span class="separator">-</span><a href=".">ShowerThoghts</a></li>
         </ul>
 
     </div>
@@ -420,6 +455,15 @@
         <li>gilded</li>
         <li>wiki</li>
     </ul>
+
+    <div class="headerBottom">
+        <span class="suggestions">Want to join?
+            <a href=".">Log in</a> or
+            <a href=".">sign up</a> in seconds.
+        </span>
+        <span class="separator">|</span>
+        <span><a href=".">English</a></span>
+    </div>
 </div>
 
 <div>
@@ -453,18 +497,89 @@
                 </div>
                 <div class="postIcon">
                     <img class="thumbnail"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
+                         src="https://b.thumbs.redditmedia.com/T66L8zrnh6pnwa_hH8NkrK_7qCejrNB8DwzwT25LbTs.jpg">
                 </div>
                 <div class="post">
                     <div class="postTitle">
-                        asdlkljasflk alsfj alskf aslkf jaslfk jals asf as fas gga s asgga sasf as fasf as f asf asf asf
-                        fas
+                        <a href="."> When you show your parents a pic on your phone and they start swiping</a>
                     </div>
                     <div class="postInfo">
                         <div class="expand">
                         </div>
                         <div style="display: inline-block;">
-                            <p class="postDate">submitted 5 hours ago by levan</p>
+                            <p class="postDate">submitted 5 hours ago by <a href=".">levan</a></p>
+                            <ul>
+                                <li><a href=".">comments</a></li>
+                                <li><a href=".">share</a></li>
+                                <li><a href=".">save</a></li>
+                                <li><a href=".">hide</a></li>
+                                <li><a href=".">report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="postItem">
+                <span class="rank">1</span>
+                <div class="votes">
+                    <div>
+                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                    </div>
+                    <div>40.2k</div>
+                    <div>
+                        <img class="arrow"
+                             src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
+                    </div>
+                </div>
+                <div class="postIcon">
+                    <img class="thumbnail"
+                         src="https://b.thumbs.redditmedia.com/RCtwEHgsooWo8uqU06t0AB9y8TJ7sOIutzs-7WM2nyo.jpg">
+                </div>
+                <div class="post">
+                    <div class="postTitle">
+                        <a href=".">TIL deer mothers will instinctively come to the rescue of a crying human baby.</a>
+                    </div>
+                    <div class="postInfo">
+                        <div class="expand">
+                        </div>
+                        <div style="display: inline-block;">
+                            <p class="postDate">submitted 5 hours ago by <a href=".">levan</a></p>
+                            <ul>
+                                <li><a href=".">comments</a></li>
+                                <li><a href=".">share</a></li>
+                                <li><a href=".">save</a></li>
+                                <li><a href=".">hide</a></li>
+                                <li><a href=".">report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="postItem">
+                <span class="rank">1</span>
+                <div class="votes">
+                    <div>
+                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                    </div>
+                    <div>40.2k</div>
+                    <div>
+                        <img class="arrow"
+                             src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
+                    </div>
+                </div>
+                <div class="postIcon">
+                    <img class="thumbnail"
+                         src="https://b.thumbs.redditmedia.com/i9vgqLFdDLwfc64SEiBRtzYDz_lC319owXGpq2ZwT3U.jpg">
+                </div>
+                <div class="post">
+                    <div class="postTitle">
+                        <a href=".">Billionaire former mayor of New York Michael Bloomberg has said he will write a $4.5m cheque to cover the US’s financial commitment to the Paris Climate agreement for 2018...says he hopes Donald Trump will change his mind and rejoin the pact next year.</a>
+                    </div>
+                    <div class="postInfo">
+                        <div class="expand">
+                        </div>
+                        <div style="display: inline-block;">
+                            <p class="postDate">submitted 5 hours ago by <a href=".">levan</a></p>
                             <ul>
                                 <li><a href=".">comments</a></li>
                                 <li><a href=".">share</a></li>
@@ -494,88 +609,13 @@
                 </div>
                 <div class="post">
                     <div class="postTitle">
-                        asdlkljasflk alsfj alskf aslkf jaslfk jals asf as fas gga s asgga sasf as fasf as f asf asf asf
-                        fas
+                        <a href=".">Redditors who have had major health issues - what small symptom should you have looked into earlier?</a>
                     </div>
                     <div class="postInfo">
                         <div class="expand">
                         </div>
                         <div style="display: inline-block;">
-                            <p class="postDate">submitted 5 hours ago by levan</p>
-                            <ul>
-                                <li><a href=".">comments</a></li>
-                                <li><a href=".">share</a></li>
-                                <li><a href=".">save</a></li>
-                                <li><a href=".">hide</a></li>
-                                <li><a href=".">report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="postItem">
-                <span class="rank">1</span>
-                <div class="votes">
-                    <div>
-                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
-                    </div>
-                    <div>40.2k</div>
-                    <div>
-                        <img class="arrow"
-                             src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
-                    </div>
-                </div>
-                <div class="postIcon">
-                    <img class="thumbnail"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
-                </div>
-                <div class="post">
-                    <div class="postTitle">
-                        asdlkljasflk alsfj alskf aslkf jaslfk jals asf as fas gga s asgga sasf as fasf as f asf asf asf
-                        fas
-                    </div>
-                    <div class="postInfo">
-                        <div class="expand">
-                        </div>
-                        <div style="display: inline-block;">
-                            <p class="postDate">submitted 5 hours ago by levan</p>
-                            <ul>
-                                <li><a href=".">comments</a></li>
-                                <li><a href=".">share</a></li>
-                                <li><a href=".">save</a></li>
-                                <li><a href=".">hide</a></li>
-                                <li><a href=".">report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="postItem">
-                <span class="rank">1</span>
-                <div class="votes">
-                    <div>
-                        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
-                    </div>
-                    <div>40.2k</div>
-                    <div>
-                        <img class="arrow"
-                             src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png">
-                    </div>
-                </div>
-                <div class="postIcon">
-                    <img class="thumbnail"
-                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxh1_B2d78d5WCxUqAe6wF_31MyGlyPev7wHvlUB_lhYYDm4nC">
-                </div>
-                <div class="post">
-                    <div class="postTitle">
-                        asdlkljasflk alsfj alskf aslkf jaslfk jals asf as fas gga s asgga sasf as fasf as f asf asf asf
-                        fas
-                    </div>
-                    <div class="postInfo">
-                        <div class="expand">
-                        </div>
-                        <div style="display: inline-block;">
-                            <p class="postDate">submitted 5 hours ago by levan</p>
+                            <p class="postDate">submitted 5 hours ago by <a href=".">levan</a></p>
                             <ul>
                                 <li><a href=".">comments</a></li>
                                 <li><a href=".">share</a></li>
